@@ -18,7 +18,7 @@ public class BankAccountMenu
             int choice = sc.nextInt();
             switch (choice)
             {
-                choice 1:
+                case 1:
                     System.out.println("Enter amount to add: ");
                     double adding = sc.nextDouble();
                     if (adding > 0)
@@ -32,7 +32,7 @@ public class BankAccountMenu
                         System.out.println("Error");
                     }
                     break;
-                choice 2:
+                case 2:
                     System.out.println("Enter amount to withdraw: ");
                     double withdrawing = sc.nextDouble();
                     if (withdrawing > 0 && withdrawing <= balance) {
@@ -45,11 +45,10 @@ public class BankAccountMenu
                         System.out.println("Insufficient funds");
                     }
                     break;
-
-                choice 3:
+                case 3:
                     System.out.println("Current balance: $" + balance);
                     break;
-                choice 4:
+                case 4:
                     System.out.println("Goodbye!");
                     run = false;
                     break;
